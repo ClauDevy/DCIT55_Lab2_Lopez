@@ -7,5 +7,5 @@
 
 ## Activity Details
 * **Title of the Laboratory Exercise:** Laboratory Exercise 2: MySQL Functions, Group By, Order By and Constraints
-* **Brief Description of the Activity:** .
+* **Brief Description of the Activity:** This repository contains the SQL scripts for Laboratory Exercise 2, focusing on advanced MySQL database operations such as using functions to manipulate selected data and formatting selected data.
 
