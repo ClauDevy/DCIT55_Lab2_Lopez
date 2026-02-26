@@ -32,7 +32,7 @@ select upper(firstName) as "First Name", upper(lastName) as "Last Name", upper(m
 from studentinfo;
 
 select studentNumber, firstName, lastName, middleName, birthdate, age, 
-replace(citizenship, 'FILIPINO', 'Pinoy') as citizenship
+replace(citizenship, 'FILIPINO', 'Pinoy') as citizenship, sex
 from studentinfo;
 
 select studentNumber, concat_ws(' ', firstName, middleName, lastName) as "FULL NAME"
@@ -47,7 +47,7 @@ set age = date_format(curdate(), '%Y') - date_format(birthdate, '%Y');
 select avg(age) as AverageAge 
 from studentinfo;
 
-select firstName, lastName, date_format(birthdate, '%M %d, %Y') as FormattedBirthdate 
+select studentNumber, firstName, lastName, middleName, date_format(birthdate, '%M %d, %Y') as FormattedBirthdate, age, citizenship, sex
 from studentinfo;
 
 select sex, count(sex) as TotalStudents 
@@ -56,4 +56,6 @@ group by sex;
 
 select * from studentinfo 
 order by lastName asc;
+
+
 
